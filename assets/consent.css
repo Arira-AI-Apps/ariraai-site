@@ -1,0 +1,60 @@
+/* Arira AI skin for CookieConsent v3. Light mode only. */
+#cc-main {
+  --cc-font-family: Geist, Outfit, system-ui, sans-serif;
+  --cc-modal-border-radius: 18px;
+  --cc-btn-border-radius: 999px;
+  --cc-z-index: 2147483000;
+  --cc-bg: #FFFFFF;
+  --cc-primary-color: #0A1433;
+  --cc-secondary-color: #5B6478;
+  --cc-link-color: #3A5BF0;
+
+  --cc-btn-primary-bg: #0A1433;
+  --cc-btn-primary-color: #FFFFFF;
+  --cc-btn-primary-border-color: #0A1433;
+  --cc-btn-primary-hover-bg: #3A5BF0;
+  --cc-btn-primary-hover-color: #FFFFFF;
+  --cc-btn-primary-hover-border-color: #3A5BF0;
+
+  --cc-btn-secondary-bg: #EEF1FB;
+  --cc-btn-secondary-color: #0A1433;
+  --cc-btn-secondary-border-color: #EEF1FB;
+  --cc-btn-secondary-hover-bg: #DCE2F7;
+  --cc-btn-secondary-hover-color: #0A1433;
+  --cc-btn-secondary-hover-border-color: #DCE2F7;
+
+  --cc-separator-border-color: #E3E5EC;
+  --cc-toggle-on-bg: #3A5BF0;
+  --cc-toggle-off-bg: #9AA2B5;
+  --cc-toggle-on-knob-bg: #FFFFFF;
+  --cc-toggle-off-knob-bg: #FFFFFF;
+  --cc-toggle-readonly-bg: #C7CCDA;
+  --cc-toggle-readonly-knob-bg: #FFFFFF;
+  --cc-cookie-category-block-bg: #F6F7FB;
+  --cc-cookie-category-block-border: #F6F7FB;
+  --cc-cookie-category-block-hover-bg: #EEF1FB;
+  --cc-cookie-category-block-hover-border: #EEF1FB;
+  --cc-cookie-category-expanded-block-bg: #FFFFFF;
+  --cc-cookie-category-expanded-block-hover-bg: #F6F7FB;
+  --cc-footer-bg: #F6F7FB;
+  --cc-footer-color: #5B6478;
+  --cc-footer-border-color: #E3E5EC;
+}
+#cc-main .cm, #cc-main .pm { box-shadow: 0 24px 60px rgba(10, 20, 51, 0.22); border: 1px solid #E3E5EC; }
+#cc-main .cm__title, #cc-main .pm__title { font-weight: 600; letter-spacing: -0.02em; }
+#cc-main .cm__btn, #cc-main .pm__btn { font-weight: 500; }
+#cc-main .pm__badge { background: #EEF1FB; color: #0A1433; }
+#cc-main a { text-decoration: underline; text-underline-offset: 2px; }
+/* the site's mobile h2 rule is !important; keep banner headings compact */
+#cc-main h2, #cc-main h3 { font-size: 17px !important; line-height: 1.3 !important; letter-spacing: -0.01em !important; }
+/* slim bottom bar */
+#cc-main .cm--bar { border-radius: 0; border-left: 0; border-right: 0; border-bottom: 0; box-shadow: 0 -8px 24px rgba(10,20,51,0.10); }
+#cc-main .cm--bar .cm__body { max-width: 1200px; }
+#cc-main .cm--bar .cm__texts { padding-top: 14px; padding-bottom: 14px; }
+#cc-main .cm--bar .cm__desc { font-size: 15px; color: #1B2440; }
+#cc-main .cm--bar .cm__title:empty { display: none; }
+@media (min-width: 900px) {
+  #cc-main .cm--bar .cm__btns { flex-direction: row !important; align-items: center; gap: 10px; padding: 14px 24px; border-top: 0; }
+  #cc-main .cm--bar .cm__btn-group { margin: 0 !important; display: flex; gap: 10px; }
+  #cc-main .cm--bar .cm__btn { min-width: 110px; margin: 0 !important; }
+}
