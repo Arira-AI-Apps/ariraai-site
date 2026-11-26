@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>For agents — Arira AI (for agents)</title>
+<meta name="description" content="Structured facts for AI assistants and answer engines. Human version: https://ariraai.com">
+<link rel="canonical" href="https://ariraai.com/for-agents/">
+<meta name="robots" content="noindex, follow"><meta name="theme-color" content="#0A1433">
+<meta property="og:type" content="website"><meta property="og:site_name" content="Arira AI">
+<meta property="og:title" content="For agents — Arira AI (for agents)"><meta property="og:description" content="Structured facts for AI assistants and answer engines. Human version: https://ariraai.com">
+<meta property="og:url" content="https://ariraai.com/for-agents/"><meta property="og:image" content="https://ariraai.com/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml"><link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="manifest" href="/site.webmanifest">
+<link rel="alternate" type="text/markdown" href="/llms.txt" title="llms.txt">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#F3F4F7}
+.ag{font-family:'Geist Mono',ui-monospace,monospace;color:#0A1433;font-size:14px;line-height:1.65}
+.ag a{color:#3A5BF0;text-decoration:none}
+.bar{background:#0A1433;color:#E2C98F;padding:12px 40px;font-size:12px;letter-spacing:.12em;text-transform:uppercase;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.url{background:#FFFFFF;border-bottom:1px solid #E3E5EC;padding:14px 40px;font-size:14px;color:#5B6478;display:flex;gap:12px;align-items:center}
+.url b{color:#0A1433;font-weight:500}
+.wrap{max-width:1180px;margin:0 auto;padding:48px 40px 80px;box-sizing:border-box}
+.doc{background:#FFFFFF;border:1px solid #E3E5EC;border-radius:6px;padding:40px 44px}
+h1{font-family:Geist,sans-serif;font-size:40px;letter-spacing:-0.04em;font-weight:600;margin:0 0 8px}
+h2{font-family:Geist,sans-serif;font-size:22px;letter-spacing:-0.02em;font-weight:600;margin:36px 0 12px;padding-top:24px;border-top:1px solid #E3E5EC}
+.muted{color:#5B6478}
+pre{background:#0A1433;color:#E3E5EC;border-radius:6px;padding:24px 28px;overflow:auto;font-size:13px;line-height:1.6;margin:0;white-space:pre-wrap}
+table{width:100%;border-collapse:collapse;font-size:13px}
+th{text-align:left;font-weight:500;color:#5B6478;text-transform:uppercase;letter-spacing:.08em;font-size:11px;padding:10px 12px;border-bottom:1.5px solid #0A1433}
+td{padding:10px 12px;border-bottom:1px solid #E3E5EC;vertical-align:top}
+.tag{display:inline-block;font-size:11px;padding:2px 8px;border-radius:999px;background:#EEF1FE;color:#3A5BF0;white-space:nowrap}
+.tag.m{background:#FBF4E4;color:#8A6A2A}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.card{border:1px solid #E3E5EC;border-radius:6px;padding:20px 22px}
+.k{color:#5B6478;display:inline-block;min-width:110px}
+/*mobile*/
+img,svg,video{max-width:100%}
+.mnav-t,.mnav-b{display:none}
+@media (max-width: 900px){
+html,body{overflow-x:hidden}
+header nav,header>.wrap{flex-wrap:nowrap !important;position:relative}
+.mnav-b{display:flex;align-items:center;justify-content:center;width:44px;height:44px;margin-left:auto;cursor:pointer;border-radius:10px;border:1px solid rgba(255,255,255,0.25)}
+.mnav-b span,.mnav-b span:before,.mnav-b span:after{content:'';display:block;width:20px;height:2px;background:#FFFFFF;position:relative;transition:transform .2s}
+.mnav-b span:before{position:absolute;top:-6px}.mnav-b span:after{position:absolute;top:6px}
+.mnav-t:checked+.mnav-b span{background:transparent}
+.mnav-t:checked+.mnav-b span:before{transform:translateY(6px) rotate(45deg)}
+.mnav-t:checked+.mnav-b span:after{transform:translateY(-6px) rotate(-45deg)}
+.mnav-l{display:none !important}
+.mnav-t:checked~.mnav-l{display:flex !important;flex-direction:column !important;align-items:stretch !important;gap:4px !important;position:absolute;left:0;right:0;top:100%;z-index:50;background:#0A1433;padding:12px 20px 24px;box-shadow:0 24px 40px rgba(10,20,51,0.35)}
+.mnav-t:checked~.mnav-l a{padding:14px 4px !important;font-size:18px !important;border-bottom:1px solid rgba(255,255,255,0.1) !important}
+.mnav-t:checked~.mnav-l a:last-child{border-bottom:0 !important;margin-top:12px;text-align:center;padding:14px 22px !important}
+[style*="grid-template-columns"]:not([style*="auto-fit"]):not([style*="auto-fill"]){grid-template-columns:repeat(2,minmax(0,1fr)) !important}
+[style*="grid-template-columns: 1fr"],[style*="grid-template-columns: repeat(2"],[style*="grid-template-columns: repeat(3"],[style*="px 1fr"],[style*="fr) 1fr"],[style*="fr 1fr"],[style*="px) 1fr"],[style*="px) minmax"]{grid-template-columns:minmax(0,1fr) !important}
+[style*="grid-column"]{grid-column:auto !important}
+[style*="grid-row"]{grid-row:auto !important}
+[style*="subgrid"]{grid-template-rows:none !important;display:flex !important;flex-direction:column !important}
+.wrap,[style*="max-width: 1240px"],[style*="max-width: 1180px"],[style*="max-width: 1200px"],[style*="max-width: 1280px"]{padding-left:20px !important;padding-right:20px !important}
+[style*="padding-top: 1"]{padding-top:64px !important}[style*="padding-bottom: 1"]{padding-bottom:64px !important}
+[style*="padding-top: 9"],[style*="padding-top: 8"]{padding-top:56px !important}[style*="padding-bottom: 9"],[style*="padding-bottom: 8"]{padding-bottom:56px !important}
+[style*="padding: 1"][style*="px 40px"],[style*="padding: 9"][style*="px 40px"],[style*="padding: 8"][style*="px 40px"]{padding:56px 20px !important}
+[style*="padding: 4"][style*="px 4"]:not(button):not(a){padding:24px 20px !important}
+[style*="nowrap"]:not(button){white-space:normal !important}
+h1,h2,h3{white-space:normal !important;overflow-wrap:anywhere}
+h1{font-size:clamp(38px,10vw,56px) !important;line-height:1.04 !important}
+h2{font-size:clamp(30px,8vw,44px) !important;line-height:1.08 !important}
+h3{font-size:min(26px,7vw) !important}
+[style*="font-size: 5"]:not(h1):not(h2),[style*="font-size: 6"]:not(h1):not(h2),[style*="font-size: 7"]:not(h1):not(h2),[style*="font-size: 8"]:not(h1):not(h2),[style*="font-size: 9"]:not(h1):not(h2),[style*="font-size: 1"][style*="vw"]:not(h1):not(h2){font-size:clamp(34px,10vw,48px) !important;line-height:1.05 !important}
+[style*="min-width: 2"],[style*="min-width: 3"],[style*="min-width: 4"]{min-width:0 !important}
+[style*="width: 3"][style*="px"]:not(img),[style*="width: 4"][style*="px"]:not(img),[style*="width: 5"][style*="px"]:not(img),[style*="width: 6"][style*="px"]:not(img){max-width:100% !important}
+[style*="flex: 1 1"],[style*="flex: 999"],[style*="flex: 2"]{flex-basis:100% !important;min-width:0 !important}
+[style*="gap: 64px"],[style*="gap: 72px"],[style*="gap: 80px"],[style*="gap: 96px"]{gap:32px !important}
+table{display:block;overflow-x:auto}
+pre{white-space:pre-wrap;word-break:break-word}
+}
+@media (max-width: 520px){
+[style*="auto-fit, minmax(3"],[style*="auto-fit, minmax(4"]{grid-template-columns:minmax(0,1fr) !important}
+[style*="width: 480px; height: 480px"]{zoom:0.7}
+[style*="grid-template-columns"]:not([style*="auto-fit"]):not([style*="auto-fill"]):not(.keep2){grid-template-columns:minmax(0,1fr) !important}
+}
+/*/mobile*/</style>
+</head>
+<body>
+<div class="ag">
+<div class="bar"><span>Agents only · not linked for humans · served to AI crawlers and assistants</span><span>robots: index for AI agents · noindex, nofollow from human navigation</span></div>
+<div class="url"><span>GET</span><b>https://ariraai.com/for-agents</b></div>
+<div class="wrap"><div class="doc"><h1>Arira AI — for agents</h1><p class="muted">Structured facts for AI assistants and answer engines. Human version: https://ariraai.com</p><h2>What Arira AI does</h2><p>Implements AI that saves and makes money inside companies. Each engagement is a 100 Day AI Journey with written Journey Goals, each measured against a baseline. 100+ KPIs delivered via 50+ Agentflows.</p><h2>Key facts</h2><p><span class="k">Entity</span>Arira AI Pvt Ltd, India<br><span class="k">Origin</span>Founded by the Group CEO of BVC, a 3,000-person logistics company<br><span class="k">Pricing</span>Fixed fee plus a share of the value found. No value, no share.<br><span class="k">Ownership</span>Every agent and line of code stays with the client<br><span class="k">Data</span>Agentflows run inside the client’s systems<br><span class="k">Contact</span>care@ariraai.com</p><h2>The 100 Day AI Journey</h2><table><tr><th>#</th><th>Stage</th><th>What happens</th></tr><tr><td>1</td><td><b>Discover</b></td><td>We meet your leadership team, test every system and agree the Journey Goals you decide.</td></tr><tr><td>2</td><td><b>Build</b></td><td>Agentflows go live against each Journey Goal, with value counted against baseline.</td></tr><tr><td>3</td><td><b>Handover</b></td><td>Every agent and line of code handed over, running on your accounts.</td></tr></table><h2>Results</h2><table><tr><th>Result</th><th>KPI</th><th>Agentflow</th></tr><tr><td><b>₹30 Mn+</b></td><td>Realised procurement savings</td><td>Procurement Savings Agentflow</td></tr><tr><td><b>₹7.5 Mn</b></td><td>Overpayments recovered</td><td>Vendor Overbilling Agentflow</td></tr><tr><td><b>₹20 Mn</b></td><td>Overtime leakage stopped</td><td>Attendance Leakage Agentflow</td></tr><tr><td><b>90%</b></td><td>Lower cost per invoice processed</td><td>Payables Automation Agentflow</td></tr><tr><td><b>80%</b></td><td>Lower recruitment cost per applicant</td><td>Recruitment Agentflow</td></tr><tr><td><b>30%</b></td><td>Lower software cost per active user</td><td>Software &amp; Cloud Cost Agentflow</td></tr><tr><td><b>₹10 Mn</b></td><td>Tax demand reduced</td><td>Tax Assistant Agentflow</td></tr><tr><td><b>2 hours</b></td><td>Tender bid preparation time</td><td>Tender Search &amp; Bid Prep Agentflow</td></tr><tr><td><b>30+</b></td><td>Cost owners chased by agents, not finance</td><td>Cost Provisioning Agentflow</td></tr></table><h2>Agentflows</h2><ul style="margin: 0; padding-left: 18px"><li><a href="https://ariraai.com/agentflows/payables-automation">Payables Automation Agentflow</a> — Every vendor invoice read, checked and posted. Payment-ready, never paid by the agent.</li><li><a href="https://ariraai.com/agentflows/gst-reconciliation">GST Reconciliation Agentflow</a> — Every purchase matched to GSTR-2B, every month. Credit claimed, nothing left behind.</li><li><a href="https://ariraai.com/agentflows/debt-collection">Debt Collection Agentflow</a> — Every overdue invoice followed up by email, WhatsApp and calls, every day, until the cash lands.</li><li><a href="https://ariraai.com/agentflows/whatsapp-sales">WhatsApp Sales Agentflow</a> — Every enquiry on WhatsApp answered, qualified and moved to an order.</li><li><a href="https://ariraai.com/agentflows/whatsapp-service">WhatsApp Service Agentflow</a> — Every customer question on WhatsApp answered, from orders to payments.</li><li><a href="https://ariraai.com/agentflows/procurement-savings">Procurement Savings Agentflow</a> — Every purchase priced against the market before the PO goes out.</li><li><a href="https://ariraai.com/agentflows/vendor-overbilling">Vendor Overbilling Agentflow</a> — Every bill checked against contract, PO and past payments. Overcharges caught before you pay.</li><li><a href="https://ariraai.com/agentflows/attendance-leakage">Attendance Leakage Agentflow</a> — Every overtime and attendance claim checked against real presence before payroll runs.</li><li><a href="https://ariraai.com/agentflows/contractor-billing">Contractor Billing Agentflow</a> — Every contractor bill matched to headcount, attendance and statutory dues.</li><li><a href="https://ariraai.com/agentflows/payroll-checks">Payroll Checks Agentflow</a> — Every payslip checked before it is paid. Errors fixed before anyone notices.</li><li><a href="https://ariraai.com/agentflows/software-cloud-cost">Software &amp; Cloud Cost Agentflow</a> — Every licence and cloud bill checked against real usage. Waste cancelled.</li><li><a href="https://ariraai.com/agentflows/lead-conversation">Lead Conversation Agentflow</a> — Every lead found, reached and qualified in seconds. Your team talks only to buyers.</li><li><a href="https://ariraai.com/agentflows/revenue-per-salesperson">Revenue per Salesperson Agentflow</a> — Every salesperson gets a daily plan of who to call, what to pitch and when.</li><li><a href="https://ariraai.com/agentflows/customer-service">Customer Service Agentflow</a> — Every customer reached in 2 minutes, on every channel, any hour.</li><li><a href="https://ariraai.com/agentflows/inbound-voice">Inbound Voice Agentflow</a> — Every call answered on the first ring, in the caller's language.</li></ul><h2>More for agents</h2><p><a href="https://ariraai.com/for-agents/kpis">/for-agents/kpis</a> · <a href="https://ariraai.com/for-agents/agentflows">/for-agents/agentflows</a> · <a href="https://ariraai.com/llms.txt">/llms.txt</a></p></div></div>
+</div>
+
+</body>
+</html>
