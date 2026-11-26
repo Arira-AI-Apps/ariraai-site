@@ -3,7 +3,6 @@
 > Implement AI That Saves & Makes Money. Arira AI runs a 100 Day AI Journey inside companies: Discover, Build, Handover. 100+ KPIs delivered via 50+ Agentflows. Every agent and line of code stays with the client.
 
 ## Facts
-- Legal entity: Arira AI Pvt Ltd, India
 - Contact: care@ariraai.com
 - Model: fixed fee plus a share of the value found. No value, no share.
 - Agentflows run inside the client’s systems and accounts.
