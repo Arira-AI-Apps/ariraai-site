@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>KPIs — Arira AI (for agents)</title>
+<meta name="description" content="The KPIs shown on ariraai.com, with the Agentflows that move them. 100+ KPIs delivered via 50+ Agentflows; your AI Journey finds yours.">
+<link rel="canonical" href="https://ariraai.com/for-agents/kpis/">
+<meta name="robots" content="noindex, follow"><meta name="theme-color" content="#0A1433">
+<meta property="og:type" content="website"><meta property="og:site_name" content="Arira AI">
+<meta property="og:title" content="KPIs — Arira AI (for agents)"><meta property="og:description" content="The KPIs shown on ariraai.com, with the Agentflows that move them. 100+ KPIs delivered via 50+ Agentflows; your AI Journey finds yours.">
+<meta property="og:url" content="https://ariraai.com/for-agents/kpis/"><meta property="og:image" content="https://ariraai.com/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml"><link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="manifest" href="/site.webmanifest">
+<link rel="alternate" type="text/markdown" href="/llms.txt" title="llms.txt">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#F3F4F7}
+.ag{font-family:'Geist Mono',ui-monospace,monospace;color:#0A1433;font-size:14px;line-height:1.65}
+.ag a{color:#3A5BF0;text-decoration:none}
+.bar{background:#0A1433;color:#E2C98F;padding:12px 40px;font-size:12px;letter-spacing:.12em;text-transform:uppercase;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.url{background:#FFFFFF;border-bottom:1px solid #E3E5EC;padding:14px 40px;font-size:14px;color:#5B6478;display:flex;gap:12px;align-items:center}
+.url b{color:#0A1433;font-weight:500}
+.wrap{max-width:1180px;margin:0 auto;padding:48px 40px 80px;box-sizing:border-box}
+.doc{background:#FFFFFF;border:1px solid #E3E5EC;border-radius:6px;padding:40px 44px}
+h1{font-family:Geist,sans-serif;font-size:40px;letter-spacing:-0.04em;font-weight:600;margin:0 0 8px}
+h2{font-family:Geist,sans-serif;font-size:22px;letter-spacing:-0.02em;font-weight:600;margin:36px 0 12px;padding-top:24px;border-top:1px solid #E3E5EC}
+.muted{color:#5B6478}
+pre{background:#0A1433;color:#E3E5EC;border-radius:6px;padding:24px 28px;overflow:auto;font-size:13px;line-height:1.6;margin:0;white-space:pre-wrap}
+table{width:100%;border-collapse:collapse;font-size:13px}
+th{text-align:left;font-weight:500;color:#5B6478;text-transform:uppercase;letter-spacing:.08em;font-size:11px;padding:10px 12px;border-bottom:1.5px solid #0A1433}
+td{padding:10px 12px;border-bottom:1px solid #E3E5EC;vertical-align:top}
+.tag{display:inline-block;font-size:11px;padding:2px 8px;border-radius:999px;background:#EEF1FE;color:#3A5BF0;white-space:nowrap}
+.tag.m{background:#FBF4E4;color:#8A6A2A}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.card{border:1px solid #E3E5EC;border-radius:6px;padding:20px 22px}
+.k{color:#5B6478;display:inline-block;min-width:110px}
+/*mobile*/
+img,svg,video{max-width:100%}
+.mnav-t,.mnav-b{display:none}
+@media (max-width: 900px){
+html,body{overflow-x:hidden}
+header nav,header>.wrap{flex-wrap:nowrap !important;position:relative}
+.mnav-b{display:flex;align-items:center;justify-content:center;width:44px;height:44px;margin-left:auto;cursor:pointer;border-radius:10px;border:1px solid rgba(255,255,255,0.25)}
+.mnav-b span,.mnav-b span:before,.mnav-b span:after{content:'';display:block;width:20px;height:2px;background:#FFFFFF;position:relative;transition:transform .2s}
+.mnav-b span:before{position:absolute;top:-6px}.mnav-b span:after{position:absolute;top:6px}
+.mnav-t:checked+.mnav-b span{background:transparent}
+.mnav-t:checked+.mnav-b span:before{transform:translateY(6px) rotate(45deg)}
+.mnav-t:checked+.mnav-b span:after{transform:translateY(-6px) rotate(-45deg)}
+.mnav-l{display:none !important}
+.mnav-t:checked~.mnav-l{display:flex !important;flex-direction:column !important;align-items:stretch !important;gap:4px !important;position:absolute;left:0;right:0;top:100%;z-index:50;background:#0A1433;padding:12px 20px 24px;box-shadow:0 24px 40px rgba(10,20,51,0.35)}
+.mnav-t:checked~.mnav-l a{padding:14px 4px !important;font-size:18px !important;border-bottom:1px solid rgba(255,255,255,0.1) !important}
+.mnav-t:checked~.mnav-l a:last-child{border-bottom:0 !important;margin-top:12px;text-align:center;padding:14px 22px !important}
+[style*="grid-template-columns"]:not([style*="auto-fit"]):not([style*="auto-fill"]){grid-template-columns:repeat(2,minmax(0,1fr)) !important}
+[style*="grid-template-columns: 1fr"],[style*="grid-template-columns: repeat(2"],[style*="grid-template-columns: repeat(3"],[style*="px 1fr"],[style*="fr) 1fr"],[style*="fr 1fr"],[style*="px) 1fr"],[style*="px) minmax"]{grid-template-columns:minmax(0,1fr) !important}
+[style*="grid-column"]{grid-column:auto !important}
+[style*="grid-row"]{grid-row:auto !important}
+[style*="subgrid"]{grid-template-rows:none !important;display:flex !important;flex-direction:column !important}
+.wrap,[style*="max-width: 1240px"],[style*="max-width: 1180px"],[style*="max-width: 1200px"],[style*="max-width: 1280px"]{padding-left:20px !important;padding-right:20px !important}
+[style*="padding-top: 1"]{padding-top:64px !important}[style*="padding-bottom: 1"]{padding-bottom:64px !important}
+[style*="padding-top: 9"],[style*="padding-top: 8"]{padding-top:56px !important}[style*="padding-bottom: 9"],[style*="padding-bottom: 8"]{padding-bottom:56px !important}
+[style*="padding: 1"][style*="px 40px"],[style*="padding: 9"][style*="px 40px"],[style*="padding: 8"][style*="px 40px"]{padding:56px 20px !important}
+[style*="padding: 4"][style*="px 4"]:not(button):not(a){padding:24px 20px !important}
+[style*="nowrap"]:not(button){white-space:normal !important}
+h1,h2,h3{white-space:normal !important;overflow-wrap:anywhere}
+h1{font-size:clamp(38px,10vw,56px) !important;line-height:1.04 !important}
+h2{font-size:clamp(30px,8vw,44px) !important;line-height:1.08 !important}
+h3{font-size:min(26px,7vw) !important}
+[style*="font-size: 5"]:not(h1):not(h2),[style*="font-size: 6"]:not(h1):not(h2),[style*="font-size: 7"]:not(h1):not(h2),[style*="font-size: 8"]:not(h1):not(h2),[style*="font-size: 9"]:not(h1):not(h2),[style*="font-size: 1"][style*="vw"]:not(h1):not(h2){font-size:clamp(34px,10vw,48px) !important;line-height:1.05 !important}
+[style*="min-width: 2"],[style*="min-width: 3"],[style*="min-width: 4"]{min-width:0 !important}
+[style*="width: 3"][style*="px"]:not(img),[style*="width: 4"][style*="px"]:not(img),[style*="width: 5"][style*="px"]:not(img),[style*="width: 6"][style*="px"]:not(img){max-width:100% !important}
+[style*="flex: 1 1"],[style*="flex: 999"],[style*="flex: 2"]{flex-basis:100% !important;min-width:0 !important}
+[style*="gap: 64px"],[style*="gap: 72px"],[style*="gap: 80px"],[style*="gap: 96px"]{gap:32px !important}
+table{display:block;overflow-x:auto}
+pre{white-space:pre-wrap;word-break:break-word}
+}
+@media (max-width: 520px){
+[style*="auto-fit, minmax(3"],[style*="auto-fit, minmax(4"]{grid-template-columns:minmax(0,1fr) !important}
+[style*="width: 480px; height: 480px"]{zoom:0.7}
+[style*="grid-template-columns"]:not([style*="auto-fit"]):not([style*="auto-fill"]):not(.keep2){grid-template-columns:minmax(0,1fr) !important}
+}
+/*/mobile*/</style>
+</head>
+<body>
+<div class="ag">
+<div class="bar"><span>Agents only · not linked for humans · served to AI crawlers and assistants</span><span>robots: index for AI agents · noindex, nofollow from human navigation</span></div>
+<div class="url"><span>GET</span><b>https://ariraai.com/for-agents/kpis</b></div>
+<div class="wrap"><div class="doc"><h1>KPIs</h1><p class="muted">The KPIs shown on ariraai.com, with the Agentflows that move them. 100+ KPIs delivered via 50+ Agentflows; your AI Journey finds yours.</p><table style="margin-top: 24px"><tr><th>#</th><th>KPI</th><th>Value</th><th>Agentflows</th></tr><tr><td>1</td><td>Save processing cost per invoice by 90%</td><td><span class="tag">Save money</span></td><td><a href="https://ariraai.com/agentflows/payables-automation">Payables Automation Agentflow</a></td></tr><tr><td>2</td><td>Claim &amp; receive GST credit</td><td><span class="tag">Save money</span></td><td><a href="https://ariraai.com/agentflows/gst-reconciliation">GST Reconciliation Agentflow</a><br><a href="https://ariraai.com/agentflows/payables-automation">Payables Automation Agentflow</a></td></tr><tr><td>3</td><td>Automate debtor collection</td><td><span class="tag m">Make money</span></td><td><a href="https://ariraai.com/agentflows/debt-collection">Debt Collection Agentflow</a><br><a href="https://ariraai.com/agentflows/whatsapp-sales">WhatsApp Sales Agentflow</a><br><a href="https://ariraai.com/agentflows/whatsapp-service">WhatsApp Service Agentflow</a></td></tr><tr><td>4</td><td>Save 10% on overall procurement spend</td><td><span class="tag">Save money</span></td><td><a href="https://ariraai.com/agentflows/procurement-savings">Procurement Savings Agentflow</a><br><a href="https://ariraai.com/agentflows/vendor-overbilling">Vendor Overbilling Agentflow</a></td></tr><tr><td>5</td><td>Minimise attendance leakages</td><td><span class="tag">Save money</span></td><td><a href="https://ariraai.com/agentflows/attendance-leakage">Attendance Leakage Agentflow</a><br><a href="https://ariraai.com/agentflows/contractor-billing">Contractor Billing Agentflow</a><br><a href="https://ariraai.com/agentflows/payroll-checks">Payroll Checks Agentflow</a></td></tr><tr><td>6</td><td>Reduce software spend by 50%</td><td><span class="tag">Save money</span></td><td><a href="https://ariraai.com/agentflows/software-cloud-cost">Software &amp; Cloud Cost Agentflow</a></td></tr><tr><td>7</td><td>Qualify leads in seconds</td><td><span class="tag m">Make money</span></td><td><a href="https://ariraai.com/agentflows/lead-conversation">Lead Conversation Agentflow</a><br><a href="https://ariraai.com/agentflows/whatsapp-sales">WhatsApp Sales Agentflow</a></td></tr><tr><td>8</td><td>Increase revenue per salesperson by 20%</td><td><span class="tag m">Make money</span></td><td><a href="https://ariraai.com/agentflows/revenue-per-salesperson">Revenue per Salesperson Agentflow</a><br><a href="https://ariraai.com/agentflows/lead-conversation">Lead Conversation Agentflow</a><br><a href="https://ariraai.com/agentflows/whatsapp-sales">WhatsApp Sales Agentflow</a></td></tr><tr><td>9</td><td>Bring first-response to leads to 2 minutes</td><td><span class="tag m">Make money</span></td><td><a href="https://ariraai.com/agentflows/customer-service">Customer Service Agentflow</a><br><a href="https://ariraai.com/agentflows/inbound-voice">Inbound Voice Agentflow</a></td></tr><tr><td>10</td><td>Cost per invoice processed</td><td><span class="tag">Save money</span></td><td><a href="https://ariraai.com/agentflows/payables-automation">Payables Automation Agentflow</a></td></tr><tr><td>11</td><td>Invoice processing time</td><td><span class="tag m">Make money</span></td><td><a href="https://ariraai.com/agentflows/payables-automation">Payables Automation Agentflow</a></td></tr><tr><td>12</td><td>Duplicate invoices and payments</td><td><span class="tag">Save money</span></td><td><a href="https://ariraai.com/agentflows/payables-automation">Payables Automation Agentflow</a><br><a href="https://ariraai.com/agentflows/vendor-overbilling">Vendor Overbilling Agentflow</a></td></tr><tr><td>13</td><td>Eligible GST credit claimed</td><td><span class="tag">Save money</span></td><td><a href="https://ariraai.com/agentflows/payables-automation">Payables Automation Agentflow</a></td></tr><tr><td>14</td><td>GST-to-ERP reconciliation variances</td><td><span class="tag">Save money</span></td><td><a href="https://ariraai.com/agentflows/gst-reconciliation">GST Reconciliation Agentflow</a></td></tr><tr><td>15</td><td>GST reconciliation exceptions resolved</td><td><span class="tag">Save money</span></td><td><a href="https://ariraai.com/agentflows/gst-reconciliation">GST Reconciliation Agentflow</a></td></tr><tr><td>16</td><td>Excess reversals corrected and reclaimed</td><td><span class="tag">Save money</span></td><td><a href="https://ariraai.com/agentflows/gst-reconciliation">GST Reconciliation Agentflow</a></td></tr><tr><td>17</td><td>Reduce DSO by 20%</td><td><span class="tag m">Make money</span></td><td><a href="https://ariraai.com/agentflows/debt-collection">Debt Collection Agentflow</a></td></tr><tr><td>18</td><td>Reduce collection cost by 80%</td><td><span class="tag">Save money</span></td><td><a href="https://ariraai.com/agentflows/debt-collection">Debt Collection Agentflow</a></td></tr><tr><td>19</td><td>Reduce bad debts</td><td><span class="tag">Save money</span></td><td><a href="https://ariraai.com/agentflows/debt-collection">Debt Collection Agentflow</a></td></tr><tr><td>20</td><td>Unanswered-enquiry rate</td><td><span class="tag m">Make money</span></td><td><a href="https://ariraai.com/agentflows/whatsapp-sales">WhatsApp Sales Agentflow</a><br><a href="https://ariraai.com/agentflows/whatsapp-service">WhatsApp Service Agentflow</a><br><a href="https://ariraai.com/agentflows/customer-service">Customer Service Agentflow</a><br><a href="https://ariraai.com/agentflows/inbound-voice">Inbound Voice Agentflow</a></td></tr><tr><td>21</td><td>Lead response time in minutes</td><td><span class="tag m">Make money</span></td><td><a href="https://ariraai.com/agentflows/whatsapp-sales">WhatsApp Sales Agentflow</a><br><a href="https://ariraai.com/agentflows/lead-conversation">Lead Conversation Agentflow</a><br><a href="https://ariraai.com/agentflows/inbound-voice">Inbound Voice Agentflow</a></td></tr><tr><td>22</td><td>First-response time to enquiries</td><td><span class="tag m">Make money</span></td><td><a href="https://ariraai.com/agentflows/whatsapp-service">WhatsApp Service Agentflow</a><br><a href="https://ariraai.com/agentflows/customer-service">Customer Service Agentflow</a></td></tr><tr><td>23</td><td>Early-payment discounts and volume rebates captured</td><td><span class="tag">Save money</span></td><td><a href="https://ariraai.com/agentflows/procurement-savings">Procurement Savings Agentflow</a></td></tr><tr><td>24</td><td>Invoice-to-PO price variance</td><td><span class="tag">Save money</span></td><td><a href="https://ariraai.com/agentflows/procurement-savings">Procurement Savings Agentflow</a></td></tr><tr><td>25</td><td>Overpayments identified, recovered and prevented</td><td><span class="tag">Save money</span></td><td><a href="https://ariraai.com/agentflows/vendor-overbilling">Vendor Overbilling Agentflow</a></td></tr><tr><td>26</td><td>Invoice-to-contract rate variance</td><td><span class="tag">Save money</span></td><td><a href="https://ariraai.com/agentflows/vendor-overbilling">Vendor Overbilling Agentflow</a></td></tr><tr><td>27</td><td>Billed-to-received quantity variance</td><td><span class="tag">Save money</span></td><td><a href="https://ariraai.com/agentflows/vendor-overbilling">Vendor Overbilling Agentflow</a></td></tr><tr><td>28</td><td>Overtime cost and unapproved overtime</td><td><span class="tag">Save money</span></td><td><a href="https://ariraai.com/agentflows/attendance-leakage">Attendance Leakage Agentflow</a></td></tr><tr><td>29</td><td>Contractor shifts billed vs attendance</td><td><span class="tag">Save money</span></td><td><a href="https://ariraai.com/agentflows/attendance-leakage">Attendance Leakage Agentflow</a><br><a href="https://ariraai.com/agentflows/contractor-billing">Contractor Billing Agentflow</a></td></tr><tr><td>30</td><td>Contractor heads billed vs deployed</td><td><span class="tag">Save money</span></td><td><a href="https://ariraai.com/agentflows/contractor-billing">Contractor Billing Agentflow</a></td></tr><tr><td>31</td><td>Contractor PF and ESIC compliance</td><td><span class="tag">Save money</span></td><td><a href="https://ariraai.com/agentflows/contractor-billing">Contractor Billing Agentflow</a></td></tr><tr><td>32</td><td>Payroll error rate and overpayment value</td><td><span class="tag">Save money</span></td><td><a href="https://ariraai.com/agentflows/payroll-checks">Payroll Checks Agentflow</a></td></tr><tr><td>33</td><td>Payroll overpayments prevented or recovered</td><td><span class="tag">Save money</span></td><td><a href="https://ariraai.com/agentflows/payroll-checks">Payroll Checks Agentflow</a></td></tr><tr><td>34</td><td>Full-and-final settlement accuracy</td><td><span class="tag">Save money</span></td><td><a href="https://ariraai.com/agentflows/payroll-checks">Payroll Checks Agentflow</a></td></tr><tr><td>35</td><td>Software cost per active user</td><td><span class="tag">Save money</span></td><td><a href="https://ariraai.com/agentflows/software-cloud-cost">Software &amp; Cloud Cost Agentflow</a></td></tr><tr><td>36</td><td>Unused paid licence and subscription cost</td><td><span class="tag">Save money</span></td><td><a href="https://ariraai.com/agentflows/software-cloud-cost">Software &amp; Cloud Cost Agentflow</a></td></tr><tr><td>37</td><td>Cloud cost per workload</td><td><span class="tag">Save money</span></td><td><a href="https://ariraai.com/agentflows/software-cloud-cost">Software &amp; Cloud Cost Agentflow</a></td></tr><tr><td>38</td><td>Accepted qualified leads and acceptance rate</td><td><span class="tag m">Make money</span></td><td><a href="https://ariraai.com/agentflows/lead-conversation">Lead Conversation Agentflow</a><br><a href="https://ariraai.com/agentflows/revenue-per-salesperson">Revenue per Salesperson Agentflow</a></td></tr><tr><td>39</td><td>Footfall-to-bill conversion rate</td><td><span class="tag m">Make money</span></td><td><a href="https://ariraai.com/agentflows/revenue-per-salesperson">Revenue per Salesperson Agentflow</a></td></tr></table></div></div>
+</div>
+
+</body>
+</html>
