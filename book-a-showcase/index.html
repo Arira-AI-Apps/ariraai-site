@@ -123,14 +123,22 @@ pre{white-space:pre-wrap;word-break:break-word}
 </footer>
 </div>
 <script>
+var ZF_URL='https://forms.zohopublic.in/ariraai1/form/BookaShowcase/formperma/EevQiBBq_A6x4HiM1ftGIcuoJYI3dzpR7O2vXFOF46o/htmlRecords/submit';
 function arSubmit(){
   var f=document.getElementById('sc-form').querySelector('form');
   if(!f.reportValidity()) return;
   var d=new FormData(f), g=function(k){return (d.get(k)||'').toString().trim();};
-  var subject='Book a Showcase | '+(g('company')||g('name'));
-  var body='Name: '+g('name')+'\nEmail: '+g('email')+'\nCompany: '+g('company')+'\nRole: '+g('role')+'\nCompany size: '+g('size')+'\n\nWhat would you fix first?\n'+g('fix');
-  window.location.href='mailto:shane@ariraai.com?cc=sara@ariraai.com,bhavik.chinai@ariraai.com&subject='+encodeURIComponent(subject)+'&body='+encodeURIComponent(body);
-  document.getElementById('sc-form').hidden=true; document.getElementById('sc-sent').hidden=false;
+  var p=new URLSearchParams();
+  p.append('zf_referrer_name',''); p.append('zf_redirect_url',''); p.append('zc_gad','');
+  p.append('SingleLine',g('name')); p.append('Email',g('email')); p.append('SingleLine1',g('company'));
+  p.append('SingleLine2',g('role')); p.append('Dropdown',g('size')); p.append('MultiLine',g('fix'));
+  var btn=f.querySelector('button'); btn.disabled=true; btn.textContent='Sending…';
+  fetch(ZF_URL,{method:'POST',mode:'no-cors',body:p}).then(function(){
+    document.getElementById('sc-form').hidden=true; document.getElementById('sc-sent').hidden=false;
+  }).catch(function(){
+    btn.disabled=false; btn.textContent='Book a Showcase';
+    alert('Something went wrong. Please write to care@ariraai.com.');
+  });
 }
 </script>
 </body>
