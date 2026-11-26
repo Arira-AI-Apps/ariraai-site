@@ -1,0 +1,296 @@
+{
+  "kpis": [
+    {
+      "kpi": "Save processing cost per invoice by 90%",
+      "value": "Save money",
+      "agentflows": [
+        "Payables Automation Agentflow"
+      ]
+    },
+    {
+      "kpi": "Claim & receive GST credit",
+      "value": "Save money",
+      "agentflows": [
+        "GST Reconciliation Agentflow",
+        "Payables Automation Agentflow"
+      ]
+    },
+    {
+      "kpi": "Automate debtor collection",
+      "value": "Make money",
+      "agentflows": [
+        "Debt Collection Agentflow",
+        "WhatsApp Sales Agentflow",
+        "WhatsApp Service Agentflow"
+      ]
+    },
+    {
+      "kpi": "Save 10% on overall procurement spend",
+      "value": "Save money",
+      "agentflows": [
+        "Procurement Savings Agentflow",
+        "Vendor Overbilling Agentflow"
+      ]
+    },
+    {
+      "kpi": "Minimise attendance leakages",
+      "value": "Save money",
+      "agentflows": [
+        "Attendance Leakage Agentflow",
+        "Contractor Billing Agentflow",
+        "Payroll Checks Agentflow"
+      ]
+    },
+    {
+      "kpi": "Reduce software spend by 50%",
+      "value": "Save money",
+      "agentflows": [
+        "Software & Cloud Cost Agentflow"
+      ]
+    },
+    {
+      "kpi": "Qualify leads in seconds",
+      "value": "Make money",
+      "agentflows": [
+        "Lead Conversation Agentflow",
+        "WhatsApp Sales Agentflow"
+      ]
+    },
+    {
+      "kpi": "Increase revenue per salesperson by 20%",
+      "value": "Make money",
+      "agentflows": [
+        "Revenue per Salesperson Agentflow",
+        "Lead Conversation Agentflow",
+        "WhatsApp Sales Agentflow"
+      ]
+    },
+    {
+      "kpi": "Bring first-response to leads to 2 minutes",
+      "value": "Make money",
+      "agentflows": [
+        "Customer Service Agentflow",
+        "Inbound Voice Agentflow"
+      ]
+    },
+    {
+      "kpi": "Cost per invoice processed",
+      "value": "Save money",
+      "agentflows": [
+        "Payables Automation Agentflow"
+      ]
+    },
+    {
+      "kpi": "Invoice processing time",
+      "value": "Make money",
+      "agentflows": [
+        "Payables Automation Agentflow"
+      ]
+    },
+    {
+      "kpi": "Duplicate invoices and payments",
+      "value": "Save money",
+      "agentflows": [
+        "Payables Automation Agentflow",
+        "Vendor Overbilling Agentflow"
+      ]
+    },
+    {
+      "kpi": "Eligible GST credit claimed",
+      "value": "Save money",
+      "agentflows": [
+        "Payables Automation Agentflow"
+      ]
+    },
+    {
+      "kpi": "GST-to-ERP reconciliation variances",
+      "value": "Save money",
+      "agentflows": [
+        "GST Reconciliation Agentflow"
+      ]
+    },
+    {
+      "kpi": "GST reconciliation exceptions resolved",
+      "value": "Save money",
+      "agentflows": [
+        "GST Reconciliation Agentflow"
+      ]
+    },
+    {
+      "kpi": "Excess reversals corrected and reclaimed",
+      "value": "Save money",
+      "agentflows": [
+        "GST Reconciliation Agentflow"
+      ]
+    },
+    {
+      "kpi": "Reduce DSO by 20%",
+      "value": "Make money",
+      "agentflows": [
+        "Debt Collection Agentflow"
+      ]
+    },
+    {
+      "kpi": "Reduce collection cost by 80%",
+      "value": "Save money",
+      "agentflows": [
+        "Debt Collection Agentflow"
+      ]
+    },
+    {
+      "kpi": "Reduce bad debts",
+      "value": "Save money",
+      "agentflows": [
+        "Debt Collection Agentflow"
+      ]
+    },
+    {
+      "kpi": "Unanswered-enquiry rate",
+      "value": "Make money",
+      "agentflows": [
+        "WhatsApp Sales Agentflow",
+        "WhatsApp Service Agentflow",
+        "Customer Service Agentflow",
+        "Inbound Voice Agentflow"
+      ]
+    },
+    {
+      "kpi": "Lead response time in minutes",
+      "value": "Make money",
+      "agentflows": [
+        "WhatsApp Sales Agentflow",
+        "Lead Conversation Agentflow",
+        "Inbound Voice Agentflow"
+      ]
+    },
+    {
+      "kpi": "First-response time to enquiries",
+      "value": "Make money",
+      "agentflows": [
+        "WhatsApp Service Agentflow",
+        "Customer Service Agentflow"
+      ]
+    },
+    {
+      "kpi": "Early-payment discounts and volume rebates captured",
+      "value": "Save money",
+      "agentflows": [
+        "Procurement Savings Agentflow"
+      ]
+    },
+    {
+      "kpi": "Invoice-to-PO price variance",
+      "value": "Save money",
+      "agentflows": [
+        "Procurement Savings Agentflow"
+      ]
+    },
+    {
+      "kpi": "Overpayments identified, recovered and prevented",
+      "value": "Save money",
+      "agentflows": [
+        "Vendor Overbilling Agentflow"
+      ]
+    },
+    {
+      "kpi": "Invoice-to-contract rate variance",
+      "value": "Save money",
+      "agentflows": [
+        "Vendor Overbilling Agentflow"
+      ]
+    },
+    {
+      "kpi": "Billed-to-received quantity variance",
+      "value": "Save money",
+      "agentflows": [
+        "Vendor Overbilling Agentflow"
+      ]
+    },
+    {
+      "kpi": "Overtime cost and unapproved overtime",
+      "value": "Save money",
+      "agentflows": [
+        "Attendance Leakage Agentflow"
+      ]
+    },
+    {
+      "kpi": "Contractor shifts billed vs attendance",
+      "value": "Save money",
+      "agentflows": [
+        "Attendance Leakage Agentflow",
+        "Contractor Billing Agentflow"
+      ]
+    },
+    {
+      "kpi": "Contractor heads billed vs deployed",
+      "value": "Save money",
+      "agentflows": [
+        "Contractor Billing Agentflow"
+      ]
+    },
+    {
+      "kpi": "Contractor PF and ESIC compliance",
+      "value": "Save money",
+      "agentflows": [
+        "Contractor Billing Agentflow"
+      ]
+    },
+    {
+      "kpi": "Payroll error rate and overpayment value",
+      "value": "Save money",
+      "agentflows": [
+        "Payroll Checks Agentflow"
+      ]
+    },
+    {
+      "kpi": "Payroll overpayments prevented or recovered",
+      "value": "Save money",
+      "agentflows": [
+        "Payroll Checks Agentflow"
+      ]
+    },
+    {
+      "kpi": "Full-and-final settlement accuracy",
+      "value": "Save money",
+      "agentflows": [
+        "Payroll Checks Agentflow"
+      ]
+    },
+    {
+      "kpi": "Software cost per active user",
+      "value": "Save money",
+      "agentflows": [
+        "Software & Cloud Cost Agentflow"
+      ]
+    },
+    {
+      "kpi": "Unused paid licence and subscription cost",
+      "value": "Save money",
+      "agentflows": [
+        "Software & Cloud Cost Agentflow"
+      ]
+    },
+    {
+      "kpi": "Cloud cost per workload",
+      "value": "Save money",
+      "agentflows": [
+        "Software & Cloud Cost Agentflow"
+      ]
+    },
+    {
+      "kpi": "Accepted qualified leads and acceptance rate",
+      "value": "Make money",
+      "agentflows": [
+        "Lead Conversation Agentflow",
+        "Revenue per Salesperson Agentflow"
+      ]
+    },
+    {
+      "kpi": "Footfall-to-bill conversion rate",
+      "value": "Make money",
+      "agentflows": [
+        "Revenue per Salesperson Agentflow"
+      ]
+    }
+  ]
+}

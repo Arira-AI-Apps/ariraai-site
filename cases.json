@@ -1,0 +1,49 @@
+{
+  "cases": [
+    {
+      "result": "₹30 Mn+",
+      "kpi": "Realised procurement savings",
+      "agentflow": "Procurement Savings Agentflow"
+    },
+    {
+      "result": "₹7.5 Mn",
+      "kpi": "Overpayments recovered",
+      "agentflow": "Vendor Overbilling Agentflow"
+    },
+    {
+      "result": "₹20 Mn",
+      "kpi": "Overtime leakage stopped",
+      "agentflow": "Attendance Leakage Agentflow"
+    },
+    {
+      "result": "90%",
+      "kpi": "Lower cost per invoice processed",
+      "agentflow": "Payables Automation Agentflow"
+    },
+    {
+      "result": "80%",
+      "kpi": "Lower recruitment cost per applicant",
+      "agentflow": "Recruitment Agentflow"
+    },
+    {
+      "result": "30%",
+      "kpi": "Lower software cost per active user",
+      "agentflow": "Software & Cloud Cost Agentflow"
+    },
+    {
+      "result": "₹10 Mn",
+      "kpi": "Tax demand reduced",
+      "agentflow": "Tax Assistant Agentflow"
+    },
+    {
+      "result": "2 hours",
+      "kpi": "Tender bid preparation time",
+      "agentflow": "Tender Search & Bid Prep Agentflow"
+    },
+    {
+      "result": "30+",
+      "kpi": "Cost owners chased by agents, not finance",
+      "agentflow": "Cost Provisioning Agentflow"
+    }
+  ]
+}

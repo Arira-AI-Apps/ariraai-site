@@ -1,0 +1,314 @@
+{
+  "agentflows": [
+    {
+      "name": "Payables Automation Agentflow",
+      "url": "https://ariraai.com/agentflows/payables-automation",
+      "summary": "Every vendor invoice read, checked and posted. Payment-ready, never paid by the agent.",
+      "reads": [
+        "Email",
+        "Vendor portals",
+        "WhatsApp"
+      ],
+      "works_in": [
+        "Tally",
+        "Oracle",
+        "SAP",
+        "Zoho"
+      ],
+      "kpis": [
+        "Cost per invoice processed",
+        "Invoice processing time",
+        "Duplicate invoices and payments",
+        "Eligible GST credit claimed"
+      ]
+    },
+    {
+      "name": "GST Reconciliation Agentflow",
+      "url": "https://ariraai.com/agentflows/gst-reconciliation",
+      "summary": "Every purchase matched to GSTR-2B, every month. Credit claimed, nothing left behind.",
+      "reads": [
+        "GST portal",
+        "Purchase register",
+        "Email"
+      ],
+      "works_in": [
+        "Tally",
+        "Oracle",
+        "SAP",
+        "Zoho"
+      ],
+      "kpis": [
+        "Claim & receive GST credit",
+        "GST-to-ERP reconciliation variances",
+        "GST reconciliation exceptions resolved",
+        "Excess reversals corrected and reclaimed"
+      ]
+    },
+    {
+      "name": "Debt Collection Agentflow",
+      "url": "https://ariraai.com/agentflows/debt-collection",
+      "summary": "Every overdue invoice followed up by email, WhatsApp and calls, every day, until the cash lands.",
+      "reads": [
+        "Tally",
+        "Oracle",
+        "SAP",
+        "Zoho",
+        "Bank feeds"
+      ],
+      "works_in": [
+        "Email",
+        "WhatsApp",
+        "Calls",
+        "Your books"
+      ],
+      "kpis": [
+        "Reduce DSO by 20%",
+        "Reduce collection cost by 80%",
+        "Reduce bad debts"
+      ]
+    },
+    {
+      "name": "WhatsApp Sales Agentflow",
+      "url": "https://ariraai.com/agentflows/whatsapp-sales",
+      "summary": "Every enquiry on WhatsApp answered, qualified and moved to an order.",
+      "reads": [
+        "WhatsApp",
+        "Website",
+        "Price lists"
+      ],
+      "works_in": [
+        "Salesforce",
+        "Zoho CRM",
+        "HubSpot"
+      ],
+      "kpis": [
+        "Qualify leads in seconds",
+        "Increase revenue per salesperson by 20%",
+        "Unanswered-enquiry rate",
+        "Lead response time in minutes"
+      ]
+    },
+    {
+      "name": "WhatsApp Service Agentflow",
+      "url": "https://ariraai.com/agentflows/whatsapp-service",
+      "summary": "Every customer question on WhatsApp answered, from orders to payments.",
+      "reads": [
+        "WhatsApp",
+        "Your ERP",
+        "Order systems"
+      ],
+      "works_in": [
+        "Freshdesk",
+        "Zoho Desk",
+        "Your books"
+      ],
+      "kpis": [
+        "Automate debtor collection",
+        "First-response time to enquiries",
+        "Unanswered-enquiry rate"
+      ]
+    },
+    {
+      "name": "Procurement Savings Agentflow",
+      "url": "https://ariraai.com/agentflows/procurement-savings",
+      "summary": "Every purchase priced against the market before the PO goes out.",
+      "reads": [
+        "Purchase requests",
+        "Vendor quotes",
+        "Email"
+      ],
+      "works_in": [
+        "Your ERP",
+        "Email to vendors"
+      ],
+      "kpis": [
+        "Save 10% on overall procurement spend",
+        "Early-payment discounts and volume rebates captured",
+        "Invoice-to-PO price variance"
+      ]
+    },
+    {
+      "name": "Vendor Overbilling Agentflow",
+      "url": "https://ariraai.com/agentflows/vendor-overbilling",
+      "summary": "Every bill checked against contract, PO and past payments. Overcharges caught before you pay.",
+      "reads": [
+        "Bills",
+        "Contracts",
+        "POs",
+        "Payment history"
+      ],
+      "works_in": [
+        "Your ERP",
+        "Email to vendors"
+      ],
+      "kpis": [
+        "Overpayments identified, recovered and prevented",
+        "Duplicate invoices and payments",
+        "Invoice-to-contract rate variance",
+        "Billed-to-received quantity variance"
+      ]
+    },
+    {
+      "name": "Attendance Leakage Agentflow",
+      "url": "https://ariraai.com/agentflows/attendance-leakage",
+      "summary": "Every overtime and attendance claim checked against real presence before payroll runs.",
+      "reads": [
+        "Biometrics",
+        "Rosters",
+        "HRMS"
+      ],
+      "works_in": [
+        "Payroll",
+        "HRMS"
+      ],
+      "kpis": [
+        "Minimise attendance leakages",
+        "Overtime cost and unapproved overtime",
+        "Contractor shifts billed vs attendance"
+      ]
+    },
+    {
+      "name": "Contractor Billing Agentflow",
+      "url": "https://ariraai.com/agentflows/contractor-billing",
+      "summary": "Every contractor bill matched to headcount, attendance and statutory dues.",
+      "reads": [
+        "Contractor bills",
+        "Attendance",
+        "Challans"
+      ],
+      "works_in": [
+        "Your ERP",
+        "Email to contractors"
+      ],
+      "kpis": [
+        "Contractor heads billed vs deployed",
+        "Contractor shifts billed vs attendance",
+        "Contractor PF and ESIC compliance"
+      ]
+    },
+    {
+      "name": "Payroll Checks Agentflow",
+      "url": "https://ariraai.com/agentflows/payroll-checks",
+      "summary": "Every payslip checked before it is paid. Errors fixed before anyone notices.",
+      "reads": [
+        "HRMS",
+        "Payroll",
+        "Bank files"
+      ],
+      "works_in": [
+        "Payroll",
+        "HRMS"
+      ],
+      "kpis": [
+        "Payroll error rate and overpayment value",
+        "Payroll overpayments prevented or recovered",
+        "Full-and-final settlement accuracy"
+      ]
+    },
+    {
+      "name": "Software & Cloud Cost Agentflow",
+      "url": "https://ariraai.com/agentflows/software-cloud-cost",
+      "summary": "Every licence and cloud bill checked against real usage. Waste cancelled.",
+      "reads": [
+        "Invoices",
+        "Card statements",
+        "Admin consoles",
+        "AWS",
+        "GCP",
+        "Azure"
+      ],
+      "works_in": [
+        "Email to owners",
+        "Your ERP"
+      ],
+      "kpis": [
+        "Reduce software spend by 50%",
+        "Software cost per active user",
+        "Unused paid licence and subscription cost",
+        "Cloud cost per workload"
+      ]
+    },
+    {
+      "name": "Lead Conversation Agentflow",
+      "url": "https://ariraai.com/agentflows/lead-conversation",
+      "summary": "Every lead found, reached and qualified in seconds. Your team talks only to buyers.",
+      "reads": [
+        "Website",
+        "LinkedIn",
+        "Lists",
+        "Forms"
+      ],
+      "works_in": [
+        "Salesforce",
+        "Zoho CRM",
+        "HubSpot",
+        "Calendars"
+      ],
+      "kpis": [
+        "Qualify leads in seconds",
+        "Accepted qualified leads and acceptance rate",
+        "Lead response time in minutes",
+        "Increase revenue per salesperson by 20%"
+      ]
+    },
+    {
+      "name": "Revenue per Salesperson Agentflow",
+      "url": "https://ariraai.com/agentflows/revenue-per-salesperson",
+      "summary": "Every salesperson gets a daily plan of who to call, what to pitch and when.",
+      "reads": [
+        "CRM",
+        "Orders",
+        "Billing"
+      ],
+      "works_in": [
+        "WhatsApp",
+        "Email",
+        "CRM"
+      ],
+      "kpis": [
+        "Increase revenue per salesperson by 20%",
+        "Footfall-to-bill conversion rate",
+        "Accepted qualified leads and acceptance rate"
+      ]
+    },
+    {
+      "name": "Customer Service Agentflow",
+      "url": "https://ariraai.com/agentflows/customer-service",
+      "summary": "Every customer reached in 2 minutes, on every channel, any hour.",
+      "reads": [
+        "Email",
+        "Chat",
+        "WhatsApp",
+        "Your systems"
+      ],
+      "works_in": [
+        "Freshdesk",
+        "Zoho Desk",
+        "Salesforce"
+      ],
+      "kpis": [
+        "Bring first-response to leads to 2 minutes",
+        "First-response time to enquiries",
+        "Unanswered-enquiry rate"
+      ]
+    },
+    {
+      "name": "Inbound Voice Agentflow",
+      "url": "https://ariraai.com/agentflows/inbound-voice",
+      "summary": "Every call answered on the first ring, in the caller's language.",
+      "reads": [
+        "Phone lines",
+        "Your systems"
+      ],
+      "works_in": [
+        "CRM",
+        "Helpdesk"
+      ],
+      "kpis": [
+        "Bring first-response to leads to 2 minutes",
+        "Unanswered-enquiry rate",
+        "Lead response time in minutes"
+      ]
+    }
+  ]
+}

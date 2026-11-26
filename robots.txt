@@ -1,0 +1,13 @@
+User-agent: *
+Allow: /
+
+# AI crawlers welcome
+User-agent: GPTBot
+User-agent: ClaudeBot
+User-agent: PerplexityBot
+User-agent: Google-Extended
+Allow: /
+Allow: /for-agents/
+
+Sitemap: https://ariraai.com/sitemap.xml
+Sitemap: https://ariraai.com/sitemap-agents.xml
