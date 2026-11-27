@@ -17,7 +17,7 @@
 
   var CONSENT_REVISION = 1;
   var POSTHOG = {
-    key: '',                                   // project API key from signals.ariraai.com → Project settings
+    key: 'phc_rLrkCEMmTtsPMLrf9LNK2ThdqhXT6y5XRoxNEXd6dBBV',                                   // project API key from signals.ariraai.com → Project settings
     host: 'https://signals.ariraai.com'
   };
   var POLICY_URL = '/legal/cookies/';
